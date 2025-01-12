@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://rocker7003.github.io/test/",
+  "homepage": "https://rocker7003.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
