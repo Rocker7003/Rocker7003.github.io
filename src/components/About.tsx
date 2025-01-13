@@ -1,5 +1,5 @@
 interface AboutProps {
-  language: 'en' | 'ru';
+  language: 'en' | 'ru'
 }
 
 const About = ({ language }: AboutProps) => {
@@ -28,24 +28,24 @@ const About = ({ language }: AboutProps) => {
         ]
       }
     }
-  };
+  }
+
+  const text = content[language]
 
   return (
-    <section className="about" id="about">
-      <div className="container">
-        <h2>{content[language].title}</h2>
-        <div className="about-content">
-          <p>{content[language].description}</p>
-          <h3>{content[language].languages.title}</h3>
-          <ul>
-            {content[language].languages.list.map((lang, index) => (
-              <li key={index}>{lang}</li>
-            ))}
-          </ul>
-        </div>
+    <section className="about">
+      <h2>{text.title}</h2>
+      <div className="about-content">
+        <p>{text.description}</p>
+        <h3>{text.languages.title}</h3>
+        <ul>
+          {text.languages.list.map((lang, index) => (
+            <li key={index}>{lang}</li>
+          ))}
+        </ul>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About; 
+export default About 

@@ -376,3 +376,74 @@ h2::after {
     padding: 0 1rem;
   }
 }
+
+.greeting {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.description {
+  color: var(--text-color-light);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.social-links a {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--text-color);
+  transform: translateY(-3px);
+  filter: drop-shadow(0 0 8px var(--primary-color));
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-content h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.about-content ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.about-content li {
+  color: var(--text-color-light);
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.about-content li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}

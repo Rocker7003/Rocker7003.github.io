@@ -40,19 +40,19 @@ const Skills = ({ language }: SkillsProps) => {
     }
   };
 
+  const text = content[language];
+
   return (
-    <section className="skills" id="skills">
-      <div className="container">
-        <h2>{content[language].title}</h2>
-        <div className="skills-grid">
-          {content[language].skills.map((skill, index) => (
-            <div key={index} className="skill-card">
-              <FontAwesomeIcon icon={skill.icon} />
-              <h3>{skill.title}</h3>
-              <p>{skill.description}</p>
-            </div>
-          ))}
-        </div>
+    <section className="skills">
+      <h2>{text.title}</h2>
+      <div className="skills-grid">
+        {text.skills.map((skill, index) => (
+          <div key={index} className="skill-card">
+            <FontAwesomeIcon icon={skill.icon} />
+            <h3>{skill.title}</h3>
+            <p>{skill.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

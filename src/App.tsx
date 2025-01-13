@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
-import Contact from './components/Contact'
 import './App.css'
 
 function App() {
@@ -32,7 +31,6 @@ function App() {
           <Hero language={language} />
           <About language={language} />
           <Skills language={language} />
-          <Contact language={language} />
         </div>
       </main>
     </div>
