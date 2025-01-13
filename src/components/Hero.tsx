@@ -10,14 +10,12 @@ const Hero = ({ language }: HeroProps) => {
     en: {
       greeting: "Hey there! I'm",
       name: "Rocker",
-      role: "A Young Developer from Kazakhstan",
-      description: "Passionate about creating amazing web experiences"
+      role: "A Young Developer from Kazakhstan"
     },
     ru: {
       greeting: "Привет!",
       name: "Я Рокер",
-      role: "Начинающий разработчик из Казахстана",
-      description: "Увлечен созданием удивительных веб-проектов"
+      role: "Начинающий разработчик из Казахстана"
     }
   }
 
@@ -28,7 +26,6 @@ const Hero = ({ language }: HeroProps) => {
       <p className="greeting">{text.greeting}</p>
       <h1>{text.name}</h1>
       <h2 className="subtitle">{text.role}</h2>
-      <p className="description">{text.description}</p>
       
       <div className="social-links">
         <a href="https://github.com/Rocker7003" target="_blank" rel="noopener noreferrer">
